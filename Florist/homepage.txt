@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Florist Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Bringing Fresh Flowers to Life — For Every Occasion</h1>
+      <p>Same-day delivery | Hand-crafted bouquets | Custom floral designs</p>
+      <div>
+        <button class="primary-btn">Shop Now</button>
+        <button class="outline-btn">Contact Us</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Our Florist</h2>
+    <p>
+      We are a local florist passionate about creating stunning floral arrangements for every occasion. 
+      Each bouquet is hand-crafted with care using only the freshest, locally-sourced flowers.
+    </p>
+  </section>
+
+  <!-- Featured Bouquets -->
+  <section class="featured">
+    <h2>Featured Bouquets</h2>
+    <div class="bouquet-grid">
+      <div class="bouquet-card">
+        <h3>Rose Romance</h3>
+        <p>$45</p>
+        <span>Elegant red and pink roses</span>
+      </div>
+      <div class="bouquet-card">
+        <h3>Spring Garden</h3>
+        <p>$38</p>
+        <span>Mixed seasonal flowers</span>
+      </div>
+      <div class="bouquet-card">
+        <h3>Pure Elegance</h3>
+        <p>$52</p>
+        <span>White lilies and roses</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

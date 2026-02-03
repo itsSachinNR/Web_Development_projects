@@ -1,0 +1,241 @@
+:root {
+  --background: hsl(30, 40%, 98%);
+  --foreground: hsl(20, 10%, 15%);
+  --primary: hsl(350, 45%, 65%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(350, 55%, 90%);
+  --accent-foreground: hsl(350, 45%, 25%);
+  --muted: hsl(30, 30%, 92%);
+  --muted-foreground: hsl(20, 10%, 45%);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.hero {
+  position: relative;
+  height: 350px;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1050&q=80') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 22, 26, 0.35);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--primary-foreground);
+}
+
+.hero-content h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.primary-btn, .outline-btn {
+  font-size: 1em;
+  margin: 0 0.5em;
+  padding: 0.7em 1.5em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.primary-btn:hover {
+  filter: brightness(0.95);
+}
+
+.outline-btn {
+  background: var(--background);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.outline-btn:hover {
+  background: var(--accent);
+}
+
+.about {
+  background: var(--accent);
+  color: var(--accent-foreground);
+  text-align: center;
+  padding: 2em;
+}
+
+.about h2 {
+  margin-bottom: 0.8em;
+}
+
+.featured {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.bouquet-grid {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bouquet-card {
+  background: var(--card, #fff);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  padding: 1em 1.5em;
+  min-width: 160px;
+}
+
+.bouquet-card h3 {
+  margin: 0.5em 0;
+  color: var(--primary);
+}
+
+.bouquet-card p {
+  color: var(--accent-foreground);
+  font-weight: bold;
+}
+
+.bouquet-card span {
+  display: block;
+  margin-top: 0.5em;
+  color: var(--foreground);
+  font-size: 0.95em;
+}
+
+.why-choose-us {
+  background: var(--muted);
+  padding: 2em;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  margin-bottom: 1.5em;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  max-width: 250px;
+}
+
+.feature .icon {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.feature h3 {
+  margin-bottom: 0.5em;
+  color: var(--primary);
+}
+
+.feature p {
+  color: var(--muted-foreground);
+}
+
+.testimonials {
+  padding: 2em;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 1.5em;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: #f9f9f9;
+  padding: 1em;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.testimonial p:first-of-type {
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+.testimonial p:last-of-type {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+footer {
+  background: var(--foreground);
+  color: var(--primary-foreground);
+  padding: 2em;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h3 {
+  margin-bottom: 0.8em;
+}
+
+.footer-col p, .footer-col a {
+  margin: 0.5em 0;
+  display: block;
+  color: var(--primary-foreground);
+}
+
+.footer-col a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--primary-foreground);
+  color: var(--primary-foreground);
+}

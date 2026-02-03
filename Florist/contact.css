@@ -1,0 +1,157 @@
+:root {
+  --background: hsl(30,40%,98%);
+  --foreground: hsl(20,10%,15%);
+  --primary: hsl(350,45%,65%);
+  --accent: hsl(350,55%,90%);
+  --muted: hsl(30,30%,92%);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent);
+  padding: 1em 2em;
+}
+.logo {
+  font-size: 1.5em;
+  color: var(--primary);
+  font-weight: bold;
+}
+nav a {
+  margin-left: 2em;
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.active, nav a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  text-align: center;
+  padding: 2em 1em 1.2em 1em;
+  background: var(--muted);
+}
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 0.4em;
+}
+.hero p {
+  font-size: 1.1em;
+  color: var(--primary);
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.form-section, .info-section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+  flex: 1 1 300px;
+  padding: 1.5em 1em 1em 1em;
+  min-width: 280px;
+}
+.form-section h2, .info-section h2 {
+  font-size: 1.2em;
+  color: var(--primary);
+  margin-bottom: 1em;
+}
+form label {
+  display: block;
+  margin: 0.8em 0 0.2em;
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: 1px solid var(--muted);
+  border-radius: 5px;
+  margin-bottom: 0.6em;
+  font-size: 1em;
+}
+form button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: hsl(350,45%,50%);
+}
+
+.info-group div {
+  margin-bottom: 0.6em;
+}
+.contact-btns {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+}
+.btn {
+  padding: 0.7em 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+.call-btn {
+  background: var(--primary);
+  color: #fff;
+}
+.call-btn:hover {
+  background: hsl(350,45%,50%);
+}
+.whatsapp-btn {
+  background: #46ca5c;
+  color: #fff;
+}
+.whatsapp-btn:hover {
+  background: #307c3a;
+}
+.map-box {
+  margin-top: 1em;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.footer {
+  background: var(--accent);
+  color: var(--primary);
+  text-align: center;
+  padding: 1.2em 1em 0.6em 1em;
+  margin-top: 2em;
+  border-top: 1px solid var(--muted);
+}
+.footer-links {
+  margin-top: 0.7em;
+}
+.footer-links a {
+  margin: 0 0.8em;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}

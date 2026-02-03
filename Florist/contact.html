@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Blooms & Petals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div>
+      <span class="logo">🌸 Blooms & Petals</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="flowers.html">Our Flowers</a>
+      <a href="#contact" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Get In Touch</h1>
+    <p>Have a question or want to place a custom order? We're here to help bring your floral vision to life.</p>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="form-section">
+      <h2>Send Us a Message</h2>
+      <form method="POST" action="contact_submit.php">>
+        <label for="name">Name</label>
+        <input id="name" type="text" required placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="your@email.com">
+
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="+91 0000000000" pattern="^^[6-9]\d{9}$">
+
+        <label for="orderType">Order Type</label>
+        <input id="orderType" type="text" placeholder="e.g., Wedding, Birthday, Anniversary">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required placeholder="Tell us about your floral needs..."></textarea>
+        <button type="submit">Submit Message</button>
+      </form>
+    </div>
+    <div class="info-section">
+      <h2>Visit Our Shop</h2>
+      <div class="info-group">
+        <div><strong>Address:</strong> 123 Blossom Street, Garden City, Bengaluru-560087</div>
+        <div><strong>Working Hours:</strong> Mon-Sat: 9am–9pm | Sun: 10am–6pm</div>
+        <div><strong>Email:</strong> hello@bloomspetals.com</div>
+        <div><strong>Phone:</strong> +91 9876543211</div>
+      </div>
+      <div class="contact-btns">
+        <a href="tel:+91 9876543211" class="btn call-btn">Call Us</a>
+        <a href="https://wa.me/9876543211?text=Hi! I'd like to order flowers" class="btn whatsapp-btn" target="_blank">WhatsApp Us</a>
+      </div>
+      <h2>Find Us</h2>
+      <div class="map-box">
+        <iframe
+          src="https://maps.google.com/maps?width=600&height=400&hl=en&q=lalbagh&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+          width="100%" height="180" style="border:0;" allowfullscreen loading="lazy" title="Map"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      &copy; 2024 Blooms & Petals. Fresh flowers, beautifully arranged.
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
